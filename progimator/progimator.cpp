@@ -62,7 +62,7 @@ void generate_anim_header( std::string filename, std::vector<Animation> anims )
     Animation anim = anims[0];
     
     outfile << "const short ANIM_NUM PROGMEM = " << anims.size() << ";" << std::endl;
-    outfile << "const short ANIM_DIR[2] PROGMEM = " << anim.getDimString() << ";" << std::endl;
+    outfile << "const short ANIM_DIM[2] PROGMEM = " << anim.getDimString() << ";" << std::endl;
     outfile << "const short ANIM_ROWLEN PROGMEM = " << anim.getRowLength() << ";" << std::endl;
     outfile << "const short ANIM_FRAMEBYTES PROGMEM = " << anim.getFrameBytes() << ";" << std::endl;
     
